@@ -1,0 +1,13 @@
+let Quotes = ['"If you See Far, You will go Far" By Sifa', "", '"Education is the most powerful weapon which you can use to change the world. "By Nelson Mandela', '"To err is human; to forgive, divine. "By Alexander Pope', '"I have no special talent. I am only passionately curious "By Albert Einstein', '"Keep your face to the sunshine and you cannot see a shadow "By Helen Keller', '"The journey of a thousand miles begins with one step. "By Lao Tzu', '"I have a dream.": – Martin Luther King Jr. "', '"The greatest glory in living lies not in never falling, but in rising every time we fall.": – Nelson Mandela "', '"It does not matter how slowly you go so long as you do not stop.": – Confucius "', '"The unexamined life is not worth living.": – Socrates "', '"If you want to make your dreams come true, the first thing you have to do is wake up.": – J.M. Power "', '"The only thing we have to fear is fear itself." - Franklin D. Roosevelt  "', '"Be yourself; everyone else is already taken." - Oscar Wilde  "', '"It does not matter how slowly you go as long as you do not stop." - Confucius  "', '"When you arise in the morning, think of what a precious privilege it is to be alive, to breathe, to think, to enjoy, to love.— Marcus Aurelius "', '"Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.— Buddha "', '"I begin to speak only when I’m certain what I’ll say isn’t better left unsaid.— Cato "', '"No person has the power to have everything they want, but it is in their power not to want what they don’t have, and to cheerfully put to good use what they do have.— Seneca "', '"It takes 20 years to build a reputation and 5 minutes to ruin it. If you think about that, you’ll do things differently.— Warren Buffett "', '"The big lesson in life, baby, is never be scared of anyone or anything.– Frank Sinatra "', '"Life is short, and truth works far and lives long: let us then speak the truth.— Arthur Schopenhauer "', '"You’re not defined by your past; you’re prepared by it. You’re stronger, more experienced, and you have greater confidence.— Joel Osteen "', '"Nothing can dim the light that shines from within.— Maya Angelou "'];
+    const button = document.getElementById("randomWordButton");
+    const displayArea = document.getElementById("displayArea");
+    button.addEventListener("click", () => {
+        // Generate a random index within the bounds of the array
+        const randomIndex = Math.floor(Math.random() * Quotes.length);
+
+        // Get the word at the random index
+        const randomWord = Quotes[randomIndex];
+
+        // Display the random word in the designated area
+        displayArea.textContent = randomWord;
+    });
