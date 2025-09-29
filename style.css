@@ -26,7 +26,7 @@ body{
     height: 400px;
     position: relative;
     left: 25%;
-    top: 120px;
+    top: 90px;
     background-color: transparent;
 }
 h1{
@@ -60,3 +60,4 @@ p{
     font-style: oblique;
 
 }
+
